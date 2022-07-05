@@ -1,0 +1,516 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background-color: #121212;
+}
+main {
+  margin-top: 2%;
+  font-size: 28px;
+  text-align: center;
+  color: #ede8f0;
+}
+#quoteDisplay {
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  font: italic 25px Georgia, serif;
+  line-height: 2em;
+  text-align: center;
+}
+button {
+  margin: 20% 0;
+  padding: 25px;
+  width: 30%;
+  height: 50%;
+  color: #ede8f0;
+  font: bold 25px Tahoma, Verdana, sans-serif;
+  background: #7141b4;
+  border-radius: 10px;
+}
+button:hover {
+  background: #502b83;
+}
+footer {
+  float: none;
+  position: absolute;
+  left: 30%;
+  margin-top: -15%;
+  padding: 10px;
+  width: 40%;
+}
+footer p {
+  color: #ede8f0;
+  font: 16.5px Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+footer a {
+  color: #915ddb;
+}
+footer a:hover {
+  color: #7039bd;
+}
+
+/*media queries*/
+@media only screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 95%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 4.5%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 0.95rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  h3 {
+    font-size: 0.95rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 0%;
+    width: 98%;
+    font-size: 0.75rem;
+    line-height: 1.7em;
+  }
+  button {
+    margin: 60% 0;
+    padding: 15px;
+    width: 90%;
+    font-size: 0.8rem;
+  }
+  footer {
+    position: absolute;
+    width: 92%;
+    left: 0%;
+    top: 88%;
+  }
+  footer p {
+    font-size: 0.6em;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 95%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 7.5%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 0%;
+    width: 98%;
+    font-size: 0.8rem;
+    line-height: 2em;
+  }
+  button {
+    margin: 70% 0;
+    padding: 15px;
+    width: 90%;
+    font-size: 1rem;
+  }
+  footer {
+    position: absolute;
+    width: 92%;
+    left: 0%;
+    top: 85%;
+  }
+  footer p {
+    font-size: 0.75em;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 95%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 12%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2em;
+  }
+  button {
+    margin: 75% 0;
+    padding: 15px;
+    width: 90%;
+    font-size: 1rem;
+  }
+  footer {
+    position: absolute;
+    width: 95%;
+    left: 0%;
+    top: 88%;
+  }
+  footer p {
+    font-size: 0.75em;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 95%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 8%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 3%;
+    width: 95%;
+    font-size: 1.1rem;
+    line-height: 1.8em;
+  }
+  button {
+    margin: 50% 0;
+    padding: 18px;
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  footer {
+    position: absolute;
+    width: 95%;
+    left: 0%;
+    top: 90%;
+  }
+  footer p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 996px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 8%;
+    text-align: center;
+    width: 98%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 9.5%;
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 2em;
+  }
+  button {
+    margin: 40% 0;
+    padding: 20px;
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  footer {
+    position: absolute;
+    width: 95%;
+    left: 0%;
+    top: 98%;
+  }
+  footer p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 996px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 8%;
+    text-align: center;
+    width: 98%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 9.5%;
+    width: 80%;
+    font-size: 1.3rem;
+    line-height: 2em;
+  }
+  button {
+    margin: 25% 0;
+    padding: 20px;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  footer {
+    position: absolute;
+    width: 95%;
+    left: 0%;
+    top: 98%;
+  }
+  footer p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 5%;
+    text-align: center;
+    width: 98%;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 9.5%;
+    width: 80%;
+    font-size: 1.35rem;
+    line-height: 2em;
+  }
+  button {
+    margin: 28% 0;
+    padding: 20px;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  footer {
+    position: absolute;
+    width: 92%;
+    left: 2%;
+    top: 102%;
+  }
+  footer p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1366px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 5%;
+    text-align: center;
+    width: 98%;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 9.5%;
+    width: 80%;
+    font-size: 1.3rem;
+    line-height: 2em;
+  }
+  button {
+    margin: 18% 0;
+    padding: 15px;
+    width: 20%;
+    font-size: 1.3rem;
+  }
+  footer {
+    position: absolute;
+    width: 92%;
+    left: 2%;
+    top: 110%;
+  }
+  footer p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 5%;
+    text-align: center;
+    width: 98%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 9.5%;
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2em;
+  }
+  button {
+    margin: 18% 0;
+    padding: 20px;
+    width: 20%;
+    font-size: 1.5rem;
+  }
+  footer {
+    position: absolute;
+    width: 92%;
+    left: 2%;
+    top: 110%;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+  }
+  main {
+    margin-top: 3%;
+    text-align: center;
+    width: 98%;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  #quoteDisplay {
+    position: absolute;
+    left: 9.5%;
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 2em;
+  }
+  button {
+    margin: 15% 0;
+    padding: 20px;
+    width: 20%;
+    font-size: 1.8rem;
+  }
+  footer {
+    position: absolute;
+    width: 92%;
+    left: 2%;
+    top: 110%;
+  }
+  footer p {
+    font-size: 1.5em;
+  }
+}
