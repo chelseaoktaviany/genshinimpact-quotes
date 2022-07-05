@@ -162,26 +162,26 @@ footer a:hover {
     text-align: center;
   }
   h1 {
-    font-size: 1.2rem;
-  }
-  p {
     font-size: 1rem;
   }
+  p {
+    font-size: 0.9rem;
+  }
   h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   #quoteDisplay {
     position: absolute;
     left: 5%;
     width: 90%;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 2em;
   }
   button {
     margin: 70% 0;
     padding: 15px;
     width: 90%;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   footer {
     position: absolute;
