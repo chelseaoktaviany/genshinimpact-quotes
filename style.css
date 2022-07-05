@@ -158,7 +158,7 @@ footer a:hover {
     z-index: -2;
   }
   main {
-    margin-top: 9%;
+    margin-top: 18%;
     text-align: center;
   }
   h1 {
@@ -187,7 +187,7 @@ footer a:hover {
     position: absolute;
     width: 90%;
     left: 2%;
-    top: 80%;
+    top: 85%;
   }
   footer p {
     font-size: 0.6em;
