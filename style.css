@@ -178,14 +178,16 @@ footer a:hover {
     line-height: 2em;
   }
   button {
-    margin: 85% 0;
+    margin: 65% 0;
     padding: 15px;
     width: 90%;
     font-size: 1rem;
   }
   footer {
+    position: absolute;
     width: 90%;
-    margin-top: 20px;
+    left: 2%;
+    top: 75%;
   }
   footer p {
     font-size: 0.6em;
